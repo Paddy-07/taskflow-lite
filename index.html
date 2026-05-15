@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>TaskFlow Lite</title>
+
+  <link
+    rel="stylesheet"
+    href="./styles/main.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./styles/utilities.css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body>
+
+  <main class="app-wrapper">
+
+    <section class="todo-container">
+
+      <!-- Header -->
+
+      <header class="app-header">
+
+        <h1>TaskFlow Lite</h1>
+
+        <p>
+          Your client-side task management solution
+        </p>
+
+      </header>
+
+      <!-- Task Form -->
+
+      <form id="task-form" class="task-form">
+
+        <input
+          type="text"
+          id="task-input"
+          placeholder="What needs to be done?"
+          maxlength="100"
+          autocomplete="off"
+        />
+
+        <button
+          type="submit"
+          id="add-task-btn"
+        >
+          Add
+        </button>
+
+      </form>
+
+      <!-- Error Message -->
+
+      <p
+        id="error-message"
+        class="error-message"
+      ></p>
+
+      <!-- Filters -->
+
+      <div class="filter-container">
+
+        <button
+          class="filter-btn active"
+          data-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="filter-btn"
+          data-filter="active"
+        >
+          Active
+        </button>
+
+        <button
+          class="filter-btn"
+          data-filter="completed"
+        >
+          Completed
+        </button>
+
+      </div>
+
+      <!-- Counter -->
+
+      <div class="task-stats">
+
+        <p id="task-counter">
+          0 Tasks Remaining
+        </p>
+
+      </div>
+
+      <!-- Task List -->
+
+      <ul
+        id="task-list"
+        class="task-list"
+      ></ul>
+
+    </section>
+
+  </main>
+
+  <script
+    type="module"
+    src="./app.js"
+  ></script>
+
+</body>
+<script type="module" src="./app.js"></script>
+</html>
